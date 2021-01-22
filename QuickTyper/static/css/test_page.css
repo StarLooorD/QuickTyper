@@ -1,0 +1,43 @@
+body{
+    font-family: "Lucida Console", monospace;
+    text-align: center;
+    background-color: #001f33;
+}
+
+.header{
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.test-text{
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.stats{
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.level{
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+form input{
+    width: 60%;;
+    height: 40px;
+    margin-top: 40px;
+
+}
+
+.return{
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bi-arrow-counterclockwise{
+    margin: 40px;
+}

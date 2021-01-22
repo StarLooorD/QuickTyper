@@ -1,0 +1,60 @@
+body{
+    font-family: "Lucida Console", monospace;
+    background-color: #001f33;
+}
+
+.content{
+    margin:40px;
+}
+
+.welcome-block{
+    height: 100vh;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 100px;
+}
+
+.speed-block{
+    height: 80vh;
+    font-size: 70px;
+}
+
+.skill-block{
+    height: 80vh;
+    font-size: 70px;
+}
+
+.improve-block{
+    height: 80vh;
+    font-size: 70px;
+}
+
+.challenge-block{
+    height: 80vh;
+    font-size: 70px;
+}
+
+.col-sec{
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.end-button{
+    text-align:center;
+}
+
+footer{
+    height: 20vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.bi-mask svg{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
