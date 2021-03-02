@@ -1,5 +1,10 @@
 class Tester:
 
+    """
+    Tester class that stores information about users typing skills,
+    and determines typing level based on the data received.
+    """
+
     def __init__(self, text, input_text='', start_time=0, end_time=0):
         self.text = text
         self.input_text = input_text
@@ -11,14 +16,21 @@ class Tester:
         self.level = 'unknown'
 
     def set_total_time(self):
+        """
+        Counts total time spent for typing.
+        :return: None
+        """
         self.total_time = round(self.end_time - self.start_time)
 
     def set_accuracy_and_wpm(self):
+        """
+        Sets typing accuracy and words per minute data.
+        :return: None
+        """
         counter = 0
         words = len(self.text.split(' '))
         for i in range(len(self.text)):
             try:
-                print(self.text[i], self.input_text[i])
                 if self.text[i] == self.input_text[i]:
                     counter += 1
             except:
@@ -27,16 +39,20 @@ class Tester:
         self.wpm = round(words * 60 / self.total_time, 1)
 
     def set_level(self):
+        """
+        Sets current user level based on WPM and accuracy data.
+        :return: None
+        """
         count = self.wpm * self.accuracy / 100
-        if count > 50:
+        if count > 45:
             self.level = 'Octopus'
-        elif 40 < count < 50:
+        elif 35 < count <= 45:
             self.level = 'Monkey'
-        elif 30 < count < 40:
+        elif 25 < count <= 35:
             self.level = 'Pigeon'
-        elif 20 < count < 30:
+        elif 15 < count <= 25:
             self.level = 'Bear'
-        elif 0 < count < 20:
+        elif 0 < count <= 15:
             self.level = 'Sloth'
         else:
             self.level = 'unknown'
