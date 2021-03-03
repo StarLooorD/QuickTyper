@@ -6,7 +6,7 @@ import random
 import time
 
 
-def redirect_welcome():
+def redirect_welcome(request):
     return redirect('welcome_page')
 
 
